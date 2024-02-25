@@ -1,0 +1,170 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "009ab82a-87df-4a14-afd1-16e7540f684f",
+			"type": "trait",
+			"name": "Bear Heart",
+			"reference": "NF8",
+			"notes": "Racial Cap Lvl 4",
+			"tags": [
+				"Physical",
+				"Bear-Folk"
+			],
+			"levels": 1,
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Fishing"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Lifting"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Swimming"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Wrestling"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "reaction_bonus",
+					"situation": "from fellow berserkers",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "0f61e65d-7c92-49fd-a0aa-b92c74eb232b",
+			"type": "trait",
+			"name": "Björnreiði (Trigger)",
+			"reference": "NF9",
+			"notes": "Racial Cap Lvl 2",
+			"tags": [
+				"Physical",
+				"Bear-Folk"
+			],
+			"levels": 1,
+			"points_per_level": 16,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Beserk"
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "when you fail a self-control roll for the Berserk disadvantage, you may spend 8 FP to gain a bonus to Striking ST and Lifting ST",
+					"amount": 5,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 16
+			}
+		},
+		{
+			"id": "812ed83a-f671-4477-8766-ebd407411067",
+			"type": "trait",
+			"name": "Björnreiði (Active)",
+			"reference": "NF9",
+			"notes": "--Effect Only, Level Must Match Trigger",
+			"tags": [
+				"Physical",
+				"Bear-Folk"
+			],
+			"levels": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Björnreiði (Trigger)"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"limitation": "lifting_only",
+					"attribute": "st",
+					"amount": 5,
+					"per_level": true
+				},
+				{
+					"type": "attribute_bonus",
+					"limitation": "striking_only",
+					"attribute": "st",
+					"amount": 5,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}
