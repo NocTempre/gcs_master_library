@@ -1,0 +1,528 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "f691153a-6833-44b8-b15f-047ee1a13346",
+	"traits": [
+		{
+			"id": "093c6cd1-ffa0-4f89-8afa-cac55c8b96d1",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "5fb1767d-8fe6-498c-b206-1e384d11dfa3",
+					"type": "trait",
+					"name": "Acute Hearing",
+					"reference": "DFA46",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hearing",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "72287e51-80ed-4c8b-97ad-e119501ccbdd",
+					"type": "trait",
+					"name": "Appearance",
+					"reference": "DFA56",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "c9a0be1e-fbf2-4999-a882-e7573206c1c5",
+							"type": "modifier",
+							"name": "Unattractive",
+							"cost": -4,
+							"cost_type": "points"
+						}
+					],
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sex appeal"
+							},
+							"amount": -2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -4
+					}
+				},
+				{
+					"id": "f5fcf12d-3829-48de-9dd0-e3dff8a9a97a",
+					"type": "trait",
+					"name": "Extra Hit Points",
+					"reference": "DFA10",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hp",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "4ea71dfa-c239-4096-98f9-c90f08dc003d",
+					"type": "trait",
+					"name": "Increased Health",
+					"reference": "DFA9",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "e40a524c-7ac4-4833-980c-d4438da313c1",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "1ea62471-d88d-41d9-96bb-b9e19cb8ae43",
+					"type": "trait",
+					"name": "Rapid Healing",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 5,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 10
+								},
+								"which": "ht"
+							}
+						]
+					},
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "554883ef-1346-43ee-bd9b-209e4e8e131c",
+					"type": "trait",
+					"name": "Resistant to Disease",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT rolls to resist disease",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "4af6834b-7be4-4236-ad44-7021023044f8",
+					"type": "trait",
+					"name": "Resistant to Poison",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT rolls to resist poison",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "83703ce2-f17b-459c-9b97-810c46f2fa7c",
+					"type": "trait",
+					"name": "Social Stigma (Savage)",
+					"reference": "DFA66",
+					"notes": "-4 to skills; Denied entry to town on 6 or less",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"name": "Half-Orc",
+			"reference": "DFA45",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "ac0e56e0-75fe-4688-a39f-42b2c3e045bc",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "cf6015c4-b6c4-4977-beab-557d308fb832",
+					"type": "trait",
+					"name": "Increased Health",
+					"reference": "DFA9",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "4c11d18e-c6b6-48bf-a6d2-0869d3be2e0b",
+					"type": "trait",
+					"name": "Extra Hit Points",
+					"reference": "DFA10",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hp",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "6fab0722-f3f9-42ad-9dd3-d7b5824ddc6b",
+					"type": "trait",
+					"name": "Acute Hearing",
+					"reference": "DFA46",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hearing",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "be8fee39-7de2-4875-b331-d43878035476",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "0744575c-eeb6-4cf3-a6de-ac28ac0f5eb2",
+					"type": "trait",
+					"name": "Rapid Healing",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 5,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 10
+								},
+								"which": "ht"
+							}
+						]
+					},
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "9a64f513-cb1a-4a6c-9a91-22b0670cbf11",
+					"type": "trait",
+					"name": "Resistant to Disease",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "e00723ce-52a1-4819-a751-cb4f5cbdd269",
+							"type": "modifier",
+							"name": "+5 to all HT rolls to resist"
+						}
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "560ae891-9e4c-404a-b065-d1e6d3c6b676",
+					"type": "trait",
+					"name": "Resistant to Poison",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "4266432b-2a5e-4e96-bc74-a81fb769d33d",
+							"type": "modifier",
+							"name": "+5 to all HT rolls to resist"
+						}
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "28de1e50-ee21-402d-96d1-58276ca172b3",
+					"type": "trait",
+					"name": "Appearance",
+					"reference": "DFA46",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "6329af92-c966-4ad9-bd21-e7e7b5c58ba5",
+							"type": "modifier",
+							"name": "Unattractive",
+							"cost": -4,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": -4
+					}
+				},
+				{
+					"id": "4f6f5e30-94ba-4dab-8a67-73fa483a2805",
+					"type": "trait",
+					"name": "Social Stigma (Savage)",
+					"reference": "DFA66",
+					"notes": "-2 reaction; -4 to skills; Denied entry to town on 6 or less",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"name": "Half-Orc",
+			"reference": "DFA45",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "cf0ffdd0-17c7-4809-bdeb-fd234a1f72e7",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "122f33cc-fccc-49aa-ba35-f65b99372637",
+					"type": "trait",
+					"name": "Rapid Healing, Very",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 15,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 12
+								},
+								"which": "ht"
+							}
+						]
+					},
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "bc807dc6-4390-41f1-a5be-b5a21fc6ae2f",
+					"type": "trait",
+					"name": "Recovery",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "0bef9325-d945-45b2-8c48-a48407064ae9",
+					"type": "trait",
+					"name": "Eh, That's Just Grug",
+					"notes": "Eliminates penalties for Social Stigma (Savage) in any town that you've spent at least one week in after a succesful adventure.",
+					"tags": [
+						"Physical"
+					],
+					"base_points": 8,
+					"calc": {
+						"points": 8
+					}
+				}
+			],
+			"name": "Half-Orc Gifts",
+			"calc": {
+				"points": 33
+			}
+		}
+	]
+}

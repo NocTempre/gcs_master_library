@@ -1,15 +1,15 @@
 {
 	"type": "template",
 	"version": 4,
-	"id": "563597b5-e429-4756-83d3-f1a34a561c52",
+	"id": "5a6b803d-22a1-492f-a74e-ac1b2fb324a0",
 	"traits": [
 		{
-			"id": "9d896f6c-f147-4df7-aa34-c676dcc529b7",
+			"id": "f53a2715-626f-43f9-b40d-3496d5c2bb0c",
 			"type": "trait_container",
 			"open": true,
 			"children": [
 				{
-					"id": "592d8300-7423-4994-9f17-2a0d4788bd2c",
+					"id": "2609a6b4-2433-48ba-93ed-b54b50f24bcb",
 					"type": "trait",
 					"name": "Increased Strength",
 					"reference": "DFA8",
@@ -34,7 +34,7 @@
 					}
 				},
 				{
-					"id": "6b2ada9c-366c-478a-bced-c46b756724d8",
+					"id": "aa8117bd-2b4b-411e-9251-c849db8db736",
 					"type": "trait",
 					"name": "Decreased Intelligence",
 					"reference": "DFA8",
@@ -59,7 +59,7 @@
 					}
 				},
 				{
-					"id": "3438465a-8a29-4943-8819-34d322bf7e7f",
+					"id": "3d62e07e-b219-45ff-bcaa-50018dae12b4",
 					"type": "trait",
 					"name": "Increased Health",
 					"reference": "DFA9",
@@ -84,7 +84,7 @@
 					}
 				},
 				{
-					"id": "a30b5c44-e923-4bb9-9e06-516f9533a05f",
+					"id": "5c92e586-ebe3-484a-9ddf-251b6610215f",
 					"type": "trait",
 					"name": "Fearlessness",
 					"reference": "DFA49",
@@ -94,13 +94,21 @@
 					],
 					"levels": 1,
 					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fright_check",
+							"amount": 1,
+							"per_level": true
+						}
+					],
 					"can_level": true,
 					"calc": {
 						"points": 2
 					}
 				},
 				{
-					"id": "6eef23fd-b21e-427c-8eee-db9f7113daaa",
+					"id": "c43c957c-93f4-4d79-9ac0-9b360db7a082",
 					"type": "trait",
 					"name": "Night Vision",
 					"reference": "DFA51",
@@ -116,7 +124,7 @@
 					}
 				},
 				{
-					"id": "34eac329-157f-46ec-86c8-a54507f7c89e",
+					"id": "893149eb-464c-4a96-802e-f5a8e36d86ac",
 					"type": "trait",
 					"name": "Tough Skin",
 					"reference": "DFA16",
@@ -219,7 +227,7 @@
 					}
 				},
 				{
-					"id": "f08cb968-b4a5-485c-896a-2fabad087460",
+					"id": "6bab0e21-b882-483d-9386-c66c8d0017f8",
 					"type": "trait",
 					"name": "Appearance",
 					"reference": "DFA56",
@@ -229,11 +237,27 @@
 					],
 					"modifiers": [
 						{
-							"id": "f18c193f-d4b2-410d-a467-c6d4981d9117",
+							"id": "c9a0be1e-fbf2-4999-a882-e7573206c1c5",
 							"type": "modifier",
 							"name": "Ugly",
 							"cost": -8,
 							"cost_type": "points"
+						}
+					],
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sex appeal"
+							},
+							"amount": -4
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
 						}
 					],
 					"calc": {
@@ -241,16 +265,23 @@
 					}
 				},
 				{
-					"id": "b29f6bae-cfd3-436b-9f75-4b3649dda290",
+					"id": "11b830e9-9ebe-497b-bd29-e0fc597e67cb",
 					"type": "trait",
 					"name": "Social Stigma (Savage)",
 					"reference": "DFA66",
-					"notes": "-2 reaction; -4 to skills; Denied entry to town on 6 or less",
+					"notes": "-4 to skills; Denied entry to town on 6 or less",
 					"tags": [
 						"Disadvantage",
 						"Social"
 					],
 					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
+						}
+					],
 					"calc": {
 						"points": -10
 					}
@@ -259,18 +290,18 @@
 			"name": "Half-Ogre",
 			"reference": "DFA44",
 			"ancestry": "Human",
-			"container_type": "race",
+			"container_type": "ancestry",
 			"calc": {
 				"points": 20
 			}
 		},
 		{
-			"id": "f18319f4-6b58-4ca3-828e-c484d5a131b4",
+			"id": "cb57458d-9001-46d6-b0e5-3e3a6e330c0d",
 			"type": "trait_container",
 			"open": true,
 			"children": [
 				{
-					"id": "23765b6f-88e3-4d2b-8c09-b8fd65bf9ad4",
+					"id": "fa4779d5-7888-4cce-8ebb-9750d5e251c3",
 					"type": "trait",
 					"name": "Tough Skin",
 					"reference": "DFA16",
@@ -373,7 +404,7 @@
 					}
 				},
 				{
-					"id": "94ff6209-cf1c-4935-aef0-0435d03b97f8",
+					"id": "49cf3c4b-abed-40d3-bf0b-ababf84e6f41",
 					"type": "trait",
 					"name": "Fearlessness",
 					"reference": "DFA49",
@@ -389,7 +420,7 @@
 					}
 				},
 				{
-					"id": "5272792c-c63f-4662-8a67-1f380a821856",
+					"id": "98bfa65c-eab5-4dca-ae85-32e65f26a6c9",
 					"type": "trait",
 					"name": "Unfazeable",
 					"reference": "DFA53",
@@ -403,7 +434,7 @@
 					}
 				},
 				{
-					"id": "c3b72cc3-692e-4d85-8d24-7c1b3cd6ce9d",
+					"id": "8d2d6616-2d9a-49fa-b774-908558d826e7",
 					"type": "trait",
 					"name": "Magic Resistance",
 					"reference": "DFA51",
@@ -419,9 +450,10 @@
 					}
 				},
 				{
-					"id": "7c73ba8b-b86b-4e30-889d-15c769176190",
+					"id": "80f5a313-7367-4be5-88de-536bb4e2edfc",
 					"type": "trait",
 					"name": "Eh, That's Just Grug",
+					"reference": "NF6",
 					"notes": "Eliminates penalties for Social Stigma (Savage) in any town that you've spent at least one week in after a succesful adventure.",
 					"tags": [
 						"Physical"
@@ -433,6 +465,7 @@
 				}
 			],
 			"name": "Half-Ogre Gifts",
+			"reference": "NF6",
 			"calc": {
 				"points": 35
 			}

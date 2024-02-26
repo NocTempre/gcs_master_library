@@ -1,0 +1,857 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "3dd87282-0d95-4b93-a059-570b4142c77d",
+	"traits": [
+		{
+			"id": "437f406d-f25f-4bee-93eb-c9db02d6bea5",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "e4332401-dedb-4d95-a195-60c0eb70cf32",
+					"type": "trait",
+					"name": "Curious",
+					"reference": "DFA59",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"cr": 12,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "3873cd7a-13a4-40df-b28e-503f2f61322c",
+					"type": "trait",
+					"name": "Decreased Basic Move",
+					"reference": "DFA11",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Mental"
+					],
+					"levels": 1,
+					"points_per_level": -5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "basic_move",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "bb634d61-e88c-476d-9a94-6150edb21be8",
+					"type": "trait",
+					"name": "Extra Fatigue Points",
+					"reference": "DFA10",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 3,
+					"points_per_level": 3,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fp",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "07849715-b8a3-4c09-b82b-176b76221974",
+					"type": "trait",
+					"name": "Honest Face",
+					"reference": "DFA50",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "250b298e-f9a2-4f2e-bb1e-9965d01fb1c3",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "da1517b9-012e-4494-b674-662d644a9bd9",
+					"type": "trait",
+					"name": "Reduced Size",
+					"tags": [
+						"Physical"
+					],
+					"levels": 1,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sm",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "7abfa5c8-a83a-4902-8ba0-cff206412dff",
+					"type": "trait",
+					"name": "Resistant to Poison",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT rolls to resist poison",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "2eb9ac70-6b93-4e52-8306-3b6892d74941",
+					"type": "trait",
+					"name": "Widget-Worker",
+					"reference": "DFA44",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"levels": 2,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "armoury"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "missile weapons"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "forced entry"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "lockpicking"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "scrounging"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "traps"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "9b332fac-ab14-4c10-9834-06ee86e2e79f",
+					"type": "trait",
+					"name": "Feature: Armor interchangeable only with that of SM -1 races.",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"name": "Gnome",
+			"reference": "DFA44",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "4a66d122-b948-4ab1-9187-9c9b2933f6a4",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "b4d3df18-efeb-4dca-9dcd-d1b95441823a",
+					"type": "trait",
+					"name": "Reduced Size",
+					"tags": [
+						"Physical"
+					],
+					"levels": 1,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sm",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "a03ec99e-40d0-409f-b3d0-205524ef96e4",
+					"type": "trait",
+					"name": "Extra Fatigue Points",
+					"reference": "DFA10",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 3,
+					"points_per_level": 3,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fp",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "18714463-fea7-4468-bf1e-cf930c88ee76",
+					"type": "trait",
+					"name": "Decreased Basic Move",
+					"reference": "DFA11",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": -5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "basic_move",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "4d8c5096-8c0a-4c68-8446-48ea6f266fa4",
+					"type": "trait",
+					"name": "Craftiness",
+					"tags": [
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Camouflage"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Disguise"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Holdout"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shadowing"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Stealth"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "1e743cf1-c641-4152-abdf-0a51a9b33ebe",
+					"type": "trait",
+					"name": "Danger Sense",
+					"reference": "DFA48",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "b08c1c5a-e4ec-4e23-949d-0f36ad7939e9",
+					"type": "trait",
+					"name": "Doodads",
+					"tags": [
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "d3708e20-fbce-4a92-8073-3938c005fada",
+					"type": "trait",
+					"name": "Honest Face",
+					"reference": "DFA50",
+					"tags": [
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "09f3da94-8292-44fc-bfea-f75dee6aa270",
+					"type": "trait",
+					"name": "Magery",
+					"reference": "DFA41",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "power_source_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arcane"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "7070b987-f67f-40d8-ace3-b1446e223be7",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "1df40fed-d4c4-451c-b77e-88e5a4f6265b",
+					"type": "trait",
+					"name": "Resistant to Poison",
+					"reference": "DFA52",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 5,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "f826d1ca-f679-4da1-bede-6d28695060de",
+					"type": "trait",
+					"name": "Curious",
+					"reference": "DFA59",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"cr": 12,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "c6c07d3f-55ed-4ae8-92b2-a9572791e67a",
+					"type": "trait",
+					"name": "Trickster",
+					"reference": "DFA66",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -15,
+					"cr": 12,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "a24a7809-a28e-4615-a200-a99eed13a865",
+					"type": "trait",
+					"name": "Vulnerability",
+					"reference": "B161",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "a36b10ce-cc49-42a3-a47a-26aadcb236a9",
+							"type": "modifier",
+							"name": "Meteoric Iron",
+							"reference": "B161",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "27f83641-f123-4aad-b7bb-cf3f440eef65",
+							"type": "modifier",
+							"name": "@Occasional attack@",
+							"reference": "B161",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "518200b6-a445-4db2-992f-e464b7535c5f",
+							"type": "modifier",
+							"name": "@Common attack@",
+							"reference": "B161",
+							"cost": -15,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "66e50d37-3f51-41ae-967b-727c17c196a6",
+							"type": "modifier",
+							"name": "@Very common attack@",
+							"reference": "B161",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "d623f2a8-520b-4f30-ab46-6b1e9175308b",
+							"type": "modifier",
+							"name": "Wounding x2",
+							"reference": "B161",
+							"cost": 2,
+							"cost_type": "multiplier"
+						},
+						{
+							"id": "168afd73-dcb8-46fd-8f72-f60e97dfe32b",
+							"type": "modifier",
+							"name": "Wounding x3",
+							"reference": "B161",
+							"cost": 3,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "e280a7da-0f6c-492d-91fb-303fdfcec9c9",
+							"type": "modifier",
+							"name": "Wounding x4",
+							"reference": "B161",
+							"cost": 4,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "885e6539-6a9b-49bc-9e99-a92298320396",
+							"type": "modifier",
+							"name": "Fatigue Only",
+							"reference": "B161",
+							"cost": -50,
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"name": "Vandræðagemsi",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "83b7b384-adb5-4e1f-8c99-e9764ea4fef9",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "8868e99c-b409-4c57-ab00-50e249088b9f",
+					"type": "trait",
+					"name": "Equipment Bond (@Specific Non-Combat Tool@)",
+					"reference": "NF5",
+					"tags": [
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "1ca7e6d6-af3c-4e8b-9355-605206536286",
+					"type": "trait",
+					"name": "Luck",
+					"reference": "DFA51",
+					"notes": "Usable once per hour of play",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 15,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Luck"
+								}
+							}
+						]
+					},
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "a848ad01-d937-468f-bd40-708ffab1ffb1",
+					"type": "trait",
+					"name": "Luck, Extraordinary",
+					"reference": "DFA51",
+					"notes": "Usable once per 30 minutes of play",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 30,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Luck"
+								}
+							}
+						]
+					},
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "c6c3a279-059a-4c28-baa7-aaf2bdef91f3",
+					"type": "trait",
+					"name": "Luck, Ridiculous",
+					"reference": "DFA51",
+					"notes": "Usable once per 10 minutes of play",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 60,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Luck"
+								}
+							}
+						]
+					},
+					"calc": {
+						"points": 60
+					}
+				},
+				{
+					"id": "1d507980-90ea-485f-bc67-ed2b8e388fab",
+					"type": "trait",
+					"name": "Gizmo",
+					"reference": "DFA39",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "989d9102-f35c-4087-bb74-624a9b53de9b",
+					"type": "trait",
+					"name": "Artificer's Lore",
+					"reference": "NF5",
+					"tags": [
+						"Physical"
+					],
+					"base_points": 25,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "when selling anything identified using this ability.",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 25
+					}
+				}
+			],
+			"name": "Gnome Gifts",
+			"reference": "NF5",
+			"calc": {
+				"points": 136
+			}
+		},
+		{
+			"id": "f5554d80-4611-4e8f-8a47-d9c196bc0d48",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "cf4a8a7c-5dd0-4ca2-ae82-9ab44e8edcfa",
+					"type": "trait",
+					"name": "Gizmo",
+					"reference": "DFA39",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "ebdc5899-4d2d-47b0-ba0a-d84c417124c2",
+					"type": "trait",
+					"name": "Improved Magic Resistance",
+					"reference": "DFA41",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "6b18ad46-0bc9-4ac5-981a-58476f2be4fa",
+					"type": "trait",
+					"name": "Illusion Magery",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"levels": 1,
+					"points_per_level": 6,
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "college_name",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 6
+					}
+				}
+			],
+			"name": "Vandræðagemsi Gifts",
+			"calc": {
+				"points": 16
+			}
+		}
+	]
+}
