@@ -251,6 +251,350 @@
 			}
 		},
 		{
+			"id": "f376f486-25f1-42aa-8b1e-474b77d25c20",
+			"type": "trait",
+			"name": "Wealth",
+			"reference": "DFA96",
+			"modifiers": [
+				{
+					"id": "4b75e91d-0988-4595-9150-6fc2ef5c7adf",
+					"type": "modifier",
+					"name": "Dead Broke",
+					"reference": "DFA67",
+					"cost": -25,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": -40
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": -1000
+						}
+					]
+				},
+				{
+					"id": "96920c8d-8ca0-49a2-9853-7b5bb08b3f3f",
+					"type": "modifier",
+					"name": "Poor",
+					"reference": "DFA67",
+					"cost": -15,
+					"cost_type": "points",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": -30
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": -800
+						}
+					]
+				},
+				{
+					"id": "e10a953d-7873-4e60-8dae-e297bf75ecfd",
+					"type": "modifier",
+					"name": "Struggling",
+					"reference": "DFA67",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": -20
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": -500
+						}
+					]
+				},
+				{
+					"id": "20302d41-392b-44a0-8dd4-c4e9fb46bdce",
+					"type": "modifier",
+					"name": "Comfortable",
+					"reference": "DFA54",
+					"cost": 10,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 20
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 1000
+						}
+					]
+				},
+				{
+					"id": "baa43843-3419-4fd3-a292-be16119a4bf1",
+					"type": "modifier",
+					"name": "Wealthy",
+					"reference": "DFA54",
+					"cost": 20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 40
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 4000
+						}
+					]
+				},
+				{
+					"id": "65a024f6-d167-420a-aedf-442e4c7d9953",
+					"type": "modifier",
+					"name": "Very Wealthy",
+					"reference": "DFA54",
+					"cost": 30,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 9000
+						}
+					]
+				},
+				{
+					"id": "59ee2fdc-d6c7-4535-8ea3-3851464c59f2",
+					"type": "modifier",
+					"name": "Filthy Rich",
+					"reference": "DFRC2:49",
+					"tags": [
+						"Advancement"
+					],
+					"cost": 50,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 1
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 99000
+						}
+					]
+				},
+				{
+					"id": "963c5923-a778-4d30-b8e1-fdfa30c480df",
+					"type": "modifier",
+					"name": "Stinking Rich",
+					"reference": "DFRC2:49",
+					"tags": [
+						"Advancement"
+					],
+					"cost": 75,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 2
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 999000
+						}
+					]
+				},
+				{
+					"id": "1dedb281-ec6f-4450-8bc2-ce91ea409952",
+					"type": "modifier",
+					"name": "Crazy Rich",
+					"reference": "DFRC2:49",
+					"tags": [
+						"Advancement"
+					],
+					"cost": 100,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 3
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 3
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 9999000
+						}
+					]
+				},
+				{
+					"id": "775ea152-ca4d-4b2b-b20b-2270a24e2995",
+					"type": "modifier",
+					"name": "Far Too Rich",
+					"reference": "DFRC2:49",
+					"tags": [
+						"Advancement"
+					],
+					"cost": 125,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 4
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 4
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 99999000
+						}
+					]
+				},
+				{
+					"id": "2dc94941-1969-4b2d-9cd1-5e5032e314f0",
+					"type": "modifier",
+					"name": "Rich Beyond Measure",
+					"reference": "DFRC2:49",
+					"tags": [
+						"Advancement"
+					],
+					"cost": 150,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 5
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 5
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 999999000
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "026f10be-0a66-414d-a4fb-b1caa367c24f",
+			"type": "trait",
+			"name": "Starting Money",
+			"reference": "DFA95",
+			"levels": 5,
+			"points_per_level": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Wealth"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Dead Broke"
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "money",
+					"amount": 500,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
 			"id": "074b0904-4f34-41aa-89a3-fbbea268b66c",
 			"type": "trait",
 			"name": "Amphibious",
@@ -9798,7 +10142,18 @@
 					"notes": "Starting wealth is 2x average",
 					"cost": 10,
 					"cost_type": "points",
-					"disabled": true
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "wealth",
+							"amount": 1000
+						}
+					]
 				},
 				{
 					"id": "277b7b0e-0d7b-4e1e-9421-caf090a53800",
@@ -9822,7 +10177,7 @@
 				}
 			],
 			"calc": {
-				"points": 0
+				"points": 10
 			}
 		},
 		{

@@ -1,0 +1,66 @@
+DFA
+    Physical
+    Supernatural
+
+    Starting
+    Advancement
+
+    Sanctity
+    Mana
+    Nature
+    Good
+    Evil
+
+    Barbarian
+    Bard
+    Cleric
+    Druid
+    Holy Warrior
+    Knight
+    Martial Artist
+    Scout
+    Swashbuckler
+    Thief
+    Wizard
+
+    Cat-Folk
+    Dwarf
+    Elf
+    Half-Elf
+    Gnome
+    Half-Ogre
+    Half-Orc
+    Halfling
+
+DFRC2:
+    Centaur
+    Minotaur
+        Attribute Modifiers: ST+3 [30]; IQ-2 [-40]; HT+3 [30].
+        Secondary Characteristic Modifiers: Per+2 [10].
+        Advantages: Absolute Direction [5]; Acute Hearing 2 [4]; 
+        Long Horns [13]; Peripheral Vision [15]; Thick Skull [3]; 
+        Tough Skin 2 [6].
+        Disadvantages: Appearance (Hideous) [-16]; Bad Temper 
+        (12) [-10]; Berserk (12) [-10].
+        Features: Bull’s face and shaggy neck. Can’t wear most 
+        humanoid helmets.
+        Special Minotaur Traits
+        Appearance (Hideous): -4 on reactions and -8 to Sex Appeal.
+        Long Horns: Can attack in close combat (reach C) or into 
+        the front hex directly ahead (reach 1). Count as weapon 
+        requiring no free hand, not as body part. Use DX or 
+        Brawling to hit, and 3 + half of (DX or Brawling) to parry. 
+        Damage is thrust impaling at +1 per die, plus Brawling 
+        bonus. Helmets with holes don’t cost extra. Existing ones 
+        can be modified; roll as in Fixer-Uppers (Exploits, p. 15), 
+        with an extra -1.
+        Thick Skull: Skull has +4 DR instead of the usual +2 
+        (Exploits, p. 54). Cumulative with Tough Skin.
+        Tough Skin: Identical to barbarian ability of the same name; 
+        see Adventurers, p. 16.
+    Dark Elf
+    Martial Artist (The Path)
+    Lizard Man
+    Unholy Warrior
+    Evil Cleric
+    Infernal

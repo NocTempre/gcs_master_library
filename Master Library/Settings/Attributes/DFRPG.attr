@@ -12,13 +12,6 @@
 			"cost_adj_percent_per_sm": 10
 		},
 		{
-			"id": "lifting_st",
-			"type": "integer_ref",
-			"name": "",
-			"full_name": "Lifting ST",
-			"attribute_base": "$st+if(has_trait(Lifting ST),trait_level(Lifting ST),0)"
-		},
-		{
 			"id": "dx",
 			"type": "integer",
 			"name": "DX",
@@ -43,11 +36,123 @@
 			"cost_per_point": 10
 		},
 		{
-			"id": "wealth",
-			"type": "integer",
-			"name": "Wealth",
-			"full_name": "Starting Wealth",
+			"id": "p_cap",
+			"type": "primary_separator",
+			"name": "Maximums"
+		},
+		{
+			"id": "m_st",
+			"type": "integer_ref",
+			"name": "Max Strength",
+			"attribute_base": "-20"
+		},
+		{
+			"id": "m_dx",
+			"type": "integer_ref",
+			"name": "Max Dexterity",
+			"attribute_base": "-20"
+		},
+		{
+			"id": "m_iq",
+			"type": "integer_ref",
+			"name": "Max Intelligence",
+			"attribute_base": "-20"
+		},
+		{
+			"id": "m_ht",
+			"type": "integer_ref",
+			"name": "Max Health",
+			"attribute_base": "-20"
+		},
+		{
+			"id": "m_will",
+			"type": "integer_ref",
+			"name": "Max Will",
+			"attribute_base": "-20"
+		},
+		{
+			"id": "m_per",
+			"type": "integer_ref",
+			"name": "Max Perception",
+			"attribute_base": "-20"
+		},
+		{
+			"id": "m_er_druid",
+			"type": "integer_ref",
+			"name": "ER (Druidic)",
+			"attribute_base": "-3"
+		},
+		{
+			"id": "m_er_holy",
+			"type": "integer_ref",
+			"name": "ER (Holy)",
+			"attribute_base": "-3"
+		},
+		{
+			"id": "m_er_mana",
+			"type": "integer_ref",
+			"name": "ER (Magical)",
+			"attribute_base": "-3"
+		},
+		{
+			"id": "p_min",
+			"type": "primary_separator",
+			"name": "Minimums"
+		},
+		{
+			"id": "n_st",
+			"type": "integer_ref",
+			"name": "Min Strength",
+			"attribute_base": "-8"
+		},
+		{
+			"id": "n_dx",
+			"type": "integer_ref",
+			"name": "Min Dexterity",
+			"attribute_base": "-8"
+		},
+		{
+			"id": "n_iq",
+			"type": "integer_ref",
+			"name": "Min Intelligence",
+			"attribute_base": "-8"
+		},
+		{
+			"id": "n_ht",
+			"type": "integer_ref",
+			"name": "Min Health",
+			"attribute_base": "-8"
+		},
+		{
+			"id": "p_wealth",
+			"type": "primary_separator",
+			"name": "Resources"
+		},
+		{
+			"id": "money",
+			"type": "integer_ref",
+			"name": "$",
+			"full_name": "Starting Money",
 			"attribute_base": "1000"
+		},
+		{
+			"id": "sell",
+			"type": "integer_ref",
+			"name": "%",
+			"full_name": "Sell Value",
+			"attribute_base": "40"
+		},
+		{
+			"id": "status",
+			"type": "integer_ref",
+			"name": "Status",
+			"attribute_base": "0"
+		},
+		{
+			"id": "lifting_st",
+			"type": "integer_ref",
+			"name": "Lifting ST",
+			"attribute_base": "$st+if(has_trait(Lifting ST),trait_level(Lifting ST),0)"
 		},
 		{
 			"id": "will",
@@ -58,7 +163,7 @@
 		},
 		{
 			"id": "fright_check",
-			"type": "integer",
+			"type": "integer_ref",
 			"name": "Fright Check",
 			"attribute_base": "$will",
 			"cost_per_point": 2
@@ -101,6 +206,11 @@
 			"attribute_base": "$per"
 		},
 		{
+			"id": "s_super",
+			"type": "secondary_separator",
+			"name": "Supernatural"
+		},
+		{
 			"id": "d_evil",
 			"type": "integer_ref",
 			"name": "Detect Evil",
@@ -111,12 +221,6 @@
 			"type": "integer_ref",
 			"name": "Detect Good",
 			"attribute_base": "if(has_trait(Detect Good),$per+trait_level(Holiness),0)"
-		},
-		{
-			"id": "d_plant",
-			"type": "integer_ref",
-			"name": "Plant Empathy",
-			"attribute_base": "if(has_trait(Plant Empathy),$iq+trait_level(Power Investiture (Druidic)),0)"
 		},
 		{
 			"id": "d_bless",
@@ -165,13 +269,59 @@
 			"id": "water_move",
 			"type": "integer_ref",
 			"name": "Water Move",
-			"attribute_base": "max(if(has_trait(Amphibious),$basic_move,floor($basic_move/5)),1)"
+			"attribute_base": "max(if(has_trait(Amphibious),$basic_move,floor($basic_move/5),1))"
 		},
 		{
 			"id": "air_move",
 			"type": "integer_ref",
 			"name": "Air Move",
-			"attribute_base": "if(has_trait(Flight) or has_trait(Beast Flight) ,2*$basic_move,0)"
+			"attribute_base": "if(has_trait(Flight)||has_trait(Beast Flight),2*$basic_move,0)"
+		},
+		{
+			"id": "c_cap",
+			"type": "secondary_separator",
+			"name": "Maximums"
+		},
+		{
+			"id": "m_hp",
+			"type": "integer_ref",
+			"name": "Max HP",
+			"attribute_base": "-ceil($st*4/3)"
+		},
+		{
+			"id": "m_fp",
+			"type": "integer_ref",
+			"name": "Max FP",
+			"attribute_base": "-ceil($ht*4/3)"
+		},
+		{
+			"id": "c_min",
+			"type": "secondary_separator",
+			"name": "Minimums"
+		},
+		{
+			"id": "n_hp",
+			"type": "integer_ref",
+			"name": "Min HP",
+			"attribute_base": "-ceil($st*2/3)"
+		},
+		{
+			"id": "n_fp",
+			"type": "integer_ref",
+			"name": "Min FP",
+			"attribute_base": "-ceil($ht*2/3)"
+		},
+		{
+			"id": "n_will",
+			"type": "integer_ref",
+			"name": "Min Will",
+			"attribute_base": "-$iq+4"
+		},
+		{
+			"id": "n_per",
+			"type": "integer_ref",
+			"name": "Min Perception",
+			"attribute_base": "-$iq+4"
 		},
 		{
 			"id": "hp",
@@ -355,7 +505,7 @@
 			"id": "er_druid",
 			"type": "pool",
 			"name": "Druidic",
-			"full_name": "Energy Reserve (Druidic)",
+			"full_name": "ER (Druidic)",
 			"attribute_base": "0",
 			"cost_per_point": 3
 		},
@@ -363,7 +513,7 @@
 			"id": "er_holy",
 			"type": "pool",
 			"name": "Holy",
-			"full_name": "Energy Reserve (Holy)",
+			"full_name": "ER (Holy)",
 			"attribute_base": "0",
 			"cost_per_point": 3
 		},
@@ -371,7 +521,7 @@
 			"id": "er_mana",
 			"type": "pool",
 			"name": "Magical",
-			"full_name": "Energy Reserve (Magical)",
+			"full_name": "ER (Magical)",
 			"attribute_base": "0",
 			"cost_per_point": 3
 		}
