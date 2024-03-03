@@ -36,104 +36,9 @@
 			"cost_per_point": 10
 		},
 		{
-			"id": "p_cap",
-			"type": "primary_separator",
-			"name": "Maximums"
-		},
-		{
-			"id": "m_st",
-			"type": "integer_ref",
-			"name": "Max Strength",
-			"attribute_base": "-20"
-		},
-		{
-			"id": "m_dx",
-			"type": "integer_ref",
-			"name": "Max Dexterity",
-			"attribute_base": "-20"
-		},
-		{
-			"id": "m_iq",
-			"type": "integer_ref",
-			"name": "Max Intelligence",
-			"attribute_base": "-20"
-		},
-		{
-			"id": "m_ht",
-			"type": "integer_ref",
-			"name": "Max Health",
-			"attribute_base": "-20"
-		},
-		{
-			"id": "m_will",
-			"type": "integer_ref",
-			"name": "Max Will",
-			"attribute_base": "-20"
-		},
-		{
-			"id": "m_per",
-			"type": "integer_ref",
-			"name": "Max Perception",
-			"attribute_base": "-20"
-		},
-		{
-			"id": "m_er_druid",
-			"type": "integer_ref",
-			"name": "ER (Druidic)",
-			"attribute_base": "-3"
-		},
-		{
-			"id": "m_er_holy",
-			"type": "integer_ref",
-			"name": "ER (Holy)",
-			"attribute_base": "-3"
-		},
-		{
-			"id": "m_er_mana",
-			"type": "integer_ref",
-			"name": "ER (Magical)",
-			"attribute_base": "-3"
-		},
-		{
-			"id": "p_min",
-			"type": "primary_separator",
-			"name": "Minimums"
-		},
-		{
-			"id": "n_st",
-			"type": "integer_ref",
-			"name": "Min Strength",
-			"attribute_base": "-8"
-		},
-		{
-			"id": "n_dx",
-			"type": "integer_ref",
-			"name": "Min Dexterity",
-			"attribute_base": "-8"
-		},
-		{
-			"id": "n_iq",
-			"type": "integer_ref",
-			"name": "Min Intelligence",
-			"attribute_base": "-8"
-		},
-		{
-			"id": "n_ht",
-			"type": "integer_ref",
-			"name": "Min Health",
-			"attribute_base": "-8"
-		},
-		{
 			"id": "p_wealth",
 			"type": "primary_separator",
 			"name": "Resources"
-		},
-		{
-			"id": "money",
-			"type": "integer_ref",
-			"name": "$",
-			"full_name": "Starting Money",
-			"attribute_base": "1000"
 		},
 		{
 			"id": "sell",
@@ -149,10 +54,23 @@
 			"attribute_base": "0"
 		},
 		{
+			"id": "money",
+			"type": "integer_ref",
+			"name": "$",
+			"full_name": "Starting Money",
+			"attribute_base": "1000"
+		},
+		{
 			"id": "lifting_st",
 			"type": "integer_ref",
 			"name": "Lifting ST",
 			"attribute_base": "$st+if(has_trait(Lifting ST),trait_level(Lifting ST),0)"
+		},
+		{
+			"id": "cm",
+			"type": "integer_ref",
+			"name": "Control Maximum",
+			"attribute_base": "$st+if(has_trait(Lifting ST),trait_level(Lifting ST),0)+if(skill_level(Sumo Wrestling)-$dx < 1,0,1)+if(skill_level(Sumo Wrestling)-$dx > 1,1,0)+if(has_trait(Wrestling Master),if(skill_level(Wrestling)-$dx < 1,0,skill_level(Wrestling)-$dx),if(skill_level(Wrestling)-$dx < 1,0,1)+if(skill_level(Wrestling)-$dx > 1,1,0))"
 		},
 		{
 			"id": "will",
@@ -165,8 +83,7 @@
 			"id": "fright_check",
 			"type": "integer_ref",
 			"name": "Fright Check",
-			"attribute_base": "$will",
-			"cost_per_point": 2
+			"attribute_base": "$will"
 		},
 		{
 			"id": "senses",
@@ -276,52 +193,6 @@
 			"type": "integer_ref",
 			"name": "Air Move",
 			"attribute_base": "if(has_trait(Flight)||has_trait(Beast Flight),2*$basic_move,0)"
-		},
-		{
-			"id": "c_cap",
-			"type": "secondary_separator",
-			"name": "Maximums"
-		},
-		{
-			"id": "m_hp",
-			"type": "integer_ref",
-			"name": "Max HP",
-			"attribute_base": "-ceil($st*4/3)"
-		},
-		{
-			"id": "m_fp",
-			"type": "integer_ref",
-			"name": "Max FP",
-			"attribute_base": "-ceil($ht*4/3)"
-		},
-		{
-			"id": "c_min",
-			"type": "secondary_separator",
-			"name": "Minimums"
-		},
-		{
-			"id": "n_hp",
-			"type": "integer_ref",
-			"name": "Min HP",
-			"attribute_base": "-ceil($st*2/3)"
-		},
-		{
-			"id": "n_fp",
-			"type": "integer_ref",
-			"name": "Min FP",
-			"attribute_base": "-ceil($ht*2/3)"
-		},
-		{
-			"id": "n_will",
-			"type": "integer_ref",
-			"name": "Min Will",
-			"attribute_base": "-$iq+4"
-		},
-		{
-			"id": "n_per",
-			"type": "integer_ref",
-			"name": "Min Perception",
-			"attribute_base": "-$iq+4"
 		},
 		{
 			"id": "hp",
@@ -452,51 +323,6 @@
 			]
 		},
 		{
-			"id": "fdg",
-			"type": "pool_separator",
-			"name": "Grappling"
-		},
-		{
-			"id": "cm",
-			"type": "pool",
-			"name": "CM",
-			"full_name": "Control Maximum",
-			"attribute_base": "$st+if(has_trait(Lifting ST),trait_level(Lifting ST),0)+if(skill_level(Sumo Wrestling)-$dx < 1,0,1)+if(skill_level(Sumo Wrestling)-$dx > 1,1,0)+if(has_trait(Wrestling Master),if(skill_level(Wrestling)-$dx < 1,0,skill_level(Wrestling)-$dx),if(skill_level(Wrestling)-$dx < 1,0,1)+if(skill_level(Wrestling)-$dx > 1,1,0))",
-			"cost_per_point": 3,
-			"thresholds": [
-				{
-					"state": "Immobilized",
-					"expression": "-$cm",
-					"explanation": "CP Inflicted: 2× Control Max or more, –12 to DX"
-				},
-				{
-					"state": "Grappled #4",
-					"expression": "floor(-$cm*.5)",
-					"explanation": "CP Inflicted: 1.5× Control Max, –8 to DX"
-				},
-				{
-					"state": "Grappled #3",
-					"expression": "0",
-					"explanation": "CP Inflicted: 1× Control Max, –6 to DX"
-				},
-				{
-					"state": "Grappled #2",
-					"expression": "floor($cm*.5)",
-					"explanation": "CP Inflicted: 1/2× Control Max, –4 to DX"
-				},
-				{
-					"state": "Grappled #1",
-					"expression": "floor($cm*.9)",
-					"explanation": "CP Inflicted: 1/10× Control Max, –2 to DX"
-				},
-				{
-					"state": "Free",
-					"expression": "$cm",
-					"explanation": "Max Ctrl you can inflict, max x2 with AOA (see FDG4)"
-				}
-			]
-		},
-		{
 			"id": "ER",
 			"type": "pool_separator",
 			"name": "Energy Reserves"
@@ -504,7 +330,7 @@
 		{
 			"id": "er_druid",
 			"type": "pool",
-			"name": "Druidic",
+			"name": "Energy Reserve (Druidic)",
 			"full_name": "ER (Druidic)",
 			"attribute_base": "0",
 			"cost_per_point": 3
@@ -512,7 +338,7 @@
 		{
 			"id": "er_holy",
 			"type": "pool",
-			"name": "Holy",
+			"name": "Energy Reserve (Holy)",
 			"full_name": "ER (Holy)",
 			"attribute_base": "0",
 			"cost_per_point": 3
@@ -520,7 +346,7 @@
 		{
 			"id": "er_mana",
 			"type": "pool",
-			"name": "Magical",
+			"name": "Energy Reserve (Magical)",
 			"full_name": "ER (Magical)",
 			"attribute_base": "0",
 			"cost_per_point": 3
