@@ -1,0 +1,1685 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "91a2453a-0fea-4c47-b3e1-25554d874dcb",
+			"type": "trait",
+			"name": "Overweight",
+			"reference": "DFA64",
+			"base_points": -1,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "disguise"
+					},
+					"amount": -1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "shadowing"
+					},
+					"amount": -1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "swimming"
+					},
+					"amount": 1
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to ST vs. knockback",
+					"amount": 1
+				}
+			],
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "5dce6bce-a930-409b-bbbe-cb134e82d120",
+			"type": "trait",
+			"name": "Nervous Stomach",
+			"reference": "DFA63",
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "86a34b51-2a4e-494b-ab91-689e1d096c6d",
+			"type": "trait",
+			"name": "Unnatural Features (@Description@)",
+			"reference": "DFA67",
+			"levels": 1,
+			"points_per_level": -1,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "disguise"
+					},
+					"amount": -1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "shadowing"
+					},
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "a0be67cc-d48a-485a-82ad-f2357e037311",
+			"type": "trait",
+			"name": "Fewer Hit Points",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -2,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "hp",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -2
+			}
+		},
+		{
+			"id": "5caa28d9-77ff-4c12-b526-10ff1c73cbfb",
+			"type": "trait",
+			"name": "Fat",
+			"reference": "DFA64",
+			"base_points": -3,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": 15
+						},
+						"which": "ht"
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "disguise"
+					},
+					"amount": -2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "shadowing"
+					},
+					"amount": -2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "swimming"
+					},
+					"amount": 3
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to ST vs. knockback",
+					"amount": 2
+				}
+			],
+			"calc": {
+				"points": -3
+			}
+		},
+		{
+			"id": "5da5b487-a52b-4418-8e77-09766c232acf",
+			"type": "trait",
+			"name": "Illiteracy",
+			"reference": "DFA61",
+			"base_points": -3,
+			"calc": {
+				"points": -3
+			}
+		},
+		{
+			"id": "f4862d7e-2795-4a39-b928-ebbd96d22434",
+			"type": "trait",
+			"name": "Fewer Fatigue Points",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -3,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "fp",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -3
+			}
+		},
+		{
+			"id": "4aaf6cb6-61a4-46b5-862e-a5752edaa99d",
+			"type": "trait",
+			"name": "Decreased Basic Speed",
+			"reference": "DFA11",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "basic_speed",
+					"amount": -0.25,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "3e0d026a-464a-4e34-9181-72ff72694035",
+			"type": "trait",
+			"name": "Compulsive Gambling",
+			"reference": "DFA59",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "106634af-0679-44ff-9f3a-e7f8f79193d1",
+			"type": "trait",
+			"name": "Gluttony",
+			"reference": "DFA60",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "e234e79b-fdfd-49a6-addb-538ef51345a0",
+			"type": "trait",
+			"name": "Chummy",
+			"reference": "DFA58",
+			"base_points": -5,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to IQ-based skills when alone",
+					"amount": -1
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "4e593a1d-e769-49f9-a72f-e4dc200be5d8",
+			"type": "trait",
+			"name": "Callous",
+			"reference": "DFA57",
+			"base_points": -5,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "psychology"
+					},
+					"amount": -3
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "teaching"
+					},
+					"amount": -3
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "54b9a26b-bef5-48f5-9ebb-7f35959ac9bb",
+			"type": "trait",
+			"name": "Truthfulness",
+			"reference": "DFA67",
+			"base_points": -5,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "fast talk"
+					},
+					"amount": -5
+				}
+			],
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "f4841614-98a4-4540-80db-cf68f4fa833b",
+			"type": "trait",
+			"name": "Code of Honor (Outlaw's)",
+			"reference": "DFA58",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "19c6af5c-7b86-49ac-8c43-a8969b0fae9a",
+			"type": "trait",
+			"name": "Pyromania",
+			"reference": "DFA65",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "b02799ad-7296-42fd-a723-2474a6a12adf",
+			"type": "trait",
+			"name": "Ham-Fisted",
+			"reference": "DFA61",
+			"levels": 1,
+			"points_per_level": -5,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "high manual dexterity"
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "contains",
+						"qualifier": "artist"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "jeweler"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "knot-tying"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "leatherworking"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "lockpicking"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "pickpocket"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "sewing"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "sleight of hand"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "surgery"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "machinist"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "contains",
+						"qualifier": "mechanic"
+					},
+					"amount": -3,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "contains",
+						"qualifier": "fast-draw"
+					},
+					"amount": -3,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "dc7e0eff-3947-4f07-9edd-d8cf2ea7a53b",
+			"type": "trait",
+			"name": "Loner",
+			"reference": "DFA63",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "4dd6b905-8064-4d53-bb27-ae03466210c3",
+			"type": "trait",
+			"name": "Post-Combat Shakes",
+			"reference": "DFA65",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "64d0693d-6654-48a3-9424-a5d7bd9efc8f",
+			"type": "trait",
+			"name": "Phobia (@Narrow@)",
+			"reference": "DFA64",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "40aac69f-4917-4bc0-9e11-5d106c0699e4",
+			"type": "trait",
+			"name": "Compulsive Carousing",
+			"reference": "DFA59",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "6ad422c1-af71-431b-93d8-04d0bf58c7b7",
+			"type": "trait",
+			"name": "Selfless",
+			"reference": "DFA65",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "5f1499a8-fc52-4783-9589-35aaf6420265",
+			"type": "trait",
+			"name": "Skinny",
+			"reference": "DFA66",
+			"base_points": -5,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": 14
+						},
+						"which": "ht"
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "disguise"
+					},
+					"amount": -2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "shadowing"
+					},
+					"amount": -2
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "ST vs. knockback",
+					"amount": -2
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "3b69eb5f-ec23-4994-bdc8-2d7bf4d1acce",
+			"type": "trait",
+			"name": "Social Stigma (Criminal Record)",
+			"reference": "DFA66",
+			"base_points": -5,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "on all rolls to buy, sell, beg for alms, or obtain quests or backers and on all Influence rolls",
+					"amount": -2
+				},
+				{
+					"type": "reaction_bonus",
+					"situation": "from others",
+					"amount": -2
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "4b165a74-da4c-477e-ad5c-abb3452d216e",
+			"type": "trait",
+			"name": "Social Stigma (Disowned)",
+			"reference": "DFA66",
+			"base_points": -5,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "from others, -2 if in the lands of your kinfolk",
+					"amount": -1
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "c7f57ce2-206c-4444-9b05-28995b8a4621",
+			"type": "trait",
+			"name": "Decreased Will",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "will",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "d9f5b85d-9384-43e9-a5b7-895433f55568",
+			"type": "trait",
+			"name": "Compulsive Spending",
+			"reference": "DFA59",
+			"base_points": -5,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "miserliness"
+						}
+					}
+				]
+			},
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "99f96c64-89c4-479d-a64b-b240bc05aa89",
+			"type": "trait",
+			"name": "Compulsive Vowing",
+			"reference": "DFA59",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "e23e7ecd-097b-43e4-a3bf-853ae85fd625",
+			"type": "trait",
+			"name": "Curious",
+			"reference": "DFA59",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "78f48adb-29f2-41b6-8c33-8c7443f2ba4e",
+			"type": "trait",
+			"name": "Overconfidence",
+			"reference": "DFA64",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "231d5d92-0738-4666-a25a-daa931c219f0",
+			"type": "trait",
+			"name": "Social Stigma (Half-Breed)",
+			"reference": "DFA66",
+			"base_points": -5,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "from members of your parent races",
+					"amount": -1
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to social skill rolls concerning members of your parent races",
+					"amount": -2
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "2fa7b417-ffc1-4cd7-af1a-684af965c2d2",
+			"type": "trait",
+			"name": "Stubbornness",
+			"reference": "DFA66",
+			"base_points": -5,
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "facdaf4c-6074-42cc-bdd9-b4f9cd74af26",
+			"type": "trait",
+			"name": "Wounded",
+			"reference": "DFA67",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "f24bada0-0437-4d8a-836b-9fe98fa93a22",
+			"type": "trait",
+			"name": "Decreased Basic Move",
+			"reference": "DFA11",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "basic_move",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "106e0133-9938-4d53-9ee1-f4979cbb25d9",
+			"type": "trait",
+			"name": "Unfit",
+			"reference": "DFA67",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "79809817-51e7-4842-80b1-95dcac421374",
+			"type": "trait",
+			"name": "Oblivious",
+			"reference": "DFA63",
+			"base_points": -5,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "diplomacy"
+					},
+					"amount": -1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "fast-talk"
+					},
+					"amount": -1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "intimidation"
+					},
+					"amount": -1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "savoir-faire"
+					},
+					"amount": -1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "sex appeal"
+					},
+					"amount": -1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "streetwise"
+					},
+					"amount": -1
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "fc001748-dcd0-4f85-9f66-aa0e9d9528bd",
+			"type": "trait",
+			"name": "Klutz",
+			"reference": "DFA62",
+			"base_points": -5,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": 13
+						},
+						"which": "dx"
+					}
+				]
+			},
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "2155b3bd-6a96-4c0e-b8a2-874233fd8db4",
+			"type": "trait",
+			"name": "Disciplines of Faith (Ritualism)",
+			"reference": "DFA59",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "d29bfa28-17d4-47b6-bd85-e62fcc987c0c",
+			"type": "trait",
+			"name": "Decreased Perception",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "per",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "d5222891-e190-4e48-b4d2-ecd25c7ed6a9",
+			"type": "trait",
+			"name": "Compulsive Generosity",
+			"reference": "DFA59",
+			"base_points": -5,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "miserliness"
+						}
+					}
+				]
+			},
+			"cr": 12,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "7a3ac9b3-5246-4a27-8024-2f2c7a9036aa",
+			"type": "trait",
+			"name": "Laziness",
+			"reference": "DFA62",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "1caf6d1d-4196-4d28-9c60-4dee23ad8c52",
+			"type": "trait",
+			"name": "Low Pain Threshold",
+			"reference": "DFA63",
+			"base_points": -10,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "high pain threshold"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "ae209b6e-c2f3-4c26-a61e-b8732d0cee15",
+			"type": "trait",
+			"name": "Disciplines of Faith (Mysticism)",
+			"reference": "DFA59",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "53742b3a-578a-445e-8d2c-7105b9a90a3c",
+			"type": "trait",
+			"name": "Jealousy",
+			"reference": "DFA61",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "dcd1e099-098d-4711-8487-2314540964d1",
+			"type": "trait",
+			"name": "Decreased Health",
+			"reference": "DFA9",
+			"levels": 1,
+			"points_per_level": -10,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "ht",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "13735534-1ae2-4e8f-96fb-f407a2d53c21",
+			"type": "trait",
+			"name": "No Sense of Humor",
+			"reference": "DFA63",
+			"base_points": -10,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "in all but the most solemn of situations",
+					"amount": -2
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "08454f25-9289-4cc8-a322-a4ffd760a9a6",
+			"type": "trait",
+			"name": "Social Stigma (Savage)",
+			"reference": "DFA66",
+			"notes": "6 or less chance on 3d to be denied entry to town",
+			"base_points": -10,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "from everyone except members of your kind",
+					"amount": -2
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to social skill rolls concerning anyone but your kind",
+					"amount": -4
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "d4a5045d-d4a3-4c6c-bc92-3d1ea3fe210d",
+			"type": "trait",
+			"name": "Social Stigma (Minority Group)",
+			"reference": "DFA66",
+			"base_points": -10,
+			"features": [
+				{
+					"type": "reaction_bonus",
+					"situation": "from everyone except members of your minority",
+					"amount": -2
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "b5832577-a3fe-4999-a6b1-849160ba984b",
+			"type": "trait",
+			"name": "Easy to Read",
+			"reference": "DFA60",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "405db083-9358-4faf-b398-4e8c31468a81",
+			"type": "trait",
+			"name": "Lame (Crippled Legs)",
+			"reference": "DFA62",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "2d4260b1-9b18-4e11-b2fc-88cb27a6376a",
+			"type": "trait",
+			"name": "Social Stigma (Excommunicated)",
+			"reference": "DFA66",
+			"notes": "You may not be a cleric",
+			"base_points": -10,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to helpful clerical spells cast on you and rolls for prayer",
+					"amount": -3
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "ed666f22-628c-4894-9ee2-40673e1a5968",
+			"type": "trait",
+			"name": "Code of Honor (Soldier's)",
+			"reference": "DFA58",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "05426261-3c26-4183-97cc-310d6b666d22",
+			"type": "trait",
+			"name": "Cowardice",
+			"reference": "DFA59",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "610c289d-af36-471e-b8ba-c15aff24e640",
+			"type": "trait",
+			"name": "Impulsiveness",
+			"reference": "DFA61",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "ca0b698d-bb32-4cf8-9764-2dd548123e19",
+			"type": "trait",
+			"name": "Honesty",
+			"reference": "DFA61",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "4e53b887-8c70-400b-b65a-d01d5cbd45d5",
+			"type": "trait",
+			"name": "Berserk",
+			"reference": "DFA57",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "eb5b8e30-98b7-49fa-ab8d-7d31b8c46c56",
+			"type": "trait",
+			"name": "Paranoia",
+			"reference": "DFA64",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "f36be5b0-9fdb-4020-bde8-d0d006bf5844",
+			"type": "trait",
+			"name": "Phobia (@Broad@)",
+			"reference": "DFA64",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "3dd0e0d2-8fa4-45ba-a036-57518c8d5c0f",
+			"type": "trait",
+			"name": "Short Attention Span",
+			"reference": "DFA66",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "61e22861-1fb3-4bc5-8c88-46357d03dc62",
+			"type": "trait",
+			"name": "Bloodlust",
+			"reference": "DFA57",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "c19fe419-8270-4c90-bb8c-91fecf8a3b91",
+			"type": "trait",
+			"name": "Xenophilia",
+			"reference": "DFA68",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "eb2a9b3c-d678-481b-9715-49f68394d19d",
+			"type": "trait",
+			"name": "Hard of Hearing",
+			"reference": "DFA61",
+			"base_points": -10,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "hearing",
+					"amount": -4
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "fe0545bb-eebd-4b93-be47-2c8102ee825f",
+			"type": "trait",
+			"name": "Bad Temper",
+			"reference": "DFA57",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "7ce1c98d-3758-4360-82ab-fb1d47093b1d",
+			"type": "trait",
+			"name": "Code of Honor (Gentleman's)",
+			"reference": "DFA58",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "1ec6ea24-f449-4c4f-b3df-7a51812c1d48",
+			"type": "trait",
+			"name": "Bully",
+			"reference": "DFA57",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "ff011cb7-3cd0-4c9e-9890-70cd6e5fe7c0",
+			"type": "trait",
+			"name": "Gullibility",
+			"reference": "DFA61",
+			"base_points": -10,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "detect lies"
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "merchant"
+					},
+					"amount": -3
+				}
+			],
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "19f990d8-cc5f-4e84-9c84-455e0988f4e5",
+			"type": "trait",
+			"name": "Clueless",
+			"reference": "DFA58",
+			"base_points": -10,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "savoir-faire"
+					},
+					"amount": -4
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "be03ccf3-aeb5-47cd-8c27-5577c45bb60f",
+			"type": "trait",
+			"name": "Decreased Strength",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": -10,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "st",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "31798a43-33f6-452e-b6bd-4e8ea37c298a",
+			"type": "trait",
+			"name": "Gregarious",
+			"reference": "DFA58",
+			"base_points": -10,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to IQ-based skills when alone",
+					"amount": -2
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to IQ-based skills in a group of 4 or less",
+					"amount": -1
+				}
+			],
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "97364617-11e5-4474-8162-52410575c392",
+			"type": "trait",
+			"name": "Miserliness",
+			"reference": "DFA63",
+			"base_points": -10,
+			"cr": 12,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "bac37ef6-261a-4ec1-82bc-c74c819046dc",
+			"type": "trait",
+			"name": "Frightens Animals",
+			"reference": "DFA60",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "d6230338-0522-4473-8778-c8d52d2de96c",
+			"type": "trait",
+			"name": "Disciplines of Faith (Chi Rituals)",
+			"reference": "DFA59",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "a96e6821-de9f-44e7-a0ad-eb708d1d5fad",
+			"type": "trait",
+			"name": "Charitable",
+			"reference": "DFA58",
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "e9c1e5bb-2cdd-4946-bc02-f3d2f5f82ce5",
+			"type": "trait",
+			"name": "Compulsive Lying",
+			"reference": "DFA59",
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "50cb120b-75e3-4910-91f8-a05a0ee9ad71",
+			"type": "trait",
+			"name": "Code of Honor (Bushido)",
+			"reference": "DFA58",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "f2de508e-436d-40f9-91b8-665acc000eef",
+			"type": "trait",
+			"name": "Code of Honor (Chivalry)",
+			"reference": "DFA58",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "dec36276-360b-4b66-9610-573baaffd785",
+			"type": "trait",
+			"name": "Unfit (Very)",
+			"reference": "DFA67",
+			"base_points": -15,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "contains",
+							"qualifier": "resistant"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "e8fd70c5-6c14-4231-a2dc-692c3c0cc83d",
+			"type": "trait",
+			"name": "Combat Paralysis",
+			"reference": "DFA58",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "aa6c4b9e-3300-4496-bbdd-5bc40152808d",
+			"type": "trait",
+			"name": "Total Klutz",
+			"reference": "DFA62",
+			"base_points": -15,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": 13
+						},
+						"which": "dx"
+					}
+				]
+			},
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "c0a58d54-9a25-4b11-8e45-0d558582b1ed",
+			"type": "trait",
+			"name": "Lecherousness",
+			"reference": "DFA62",
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "c3d195a8-825d-4200-9d22-232282ab2cb8",
+			"type": "trait",
+			"name": "Weirdness Magnet",
+			"reference": "DFA67",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "37aa3f84-49bc-4b18-948d-eb7bfe765d06",
+			"type": "trait",
+			"name": "Kleptomania",
+			"reference": "DFA62",
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "ee2b29d3-d164-4e57-8e84-22257bbe12d8",
+			"type": "trait",
+			"name": "One Eye",
+			"reference": "DFA63",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "75a4b303-5e75-4ac3-af57-c39d19ef26c0",
+			"type": "trait",
+			"name": "Fanaticism (@Group or ideal@)",
+			"reference": "DFA60",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "cfa6c351-44f4-478b-b8e2-4bf20196e78d",
+			"type": "trait",
+			"name": "Phobia (@Pervasive@)",
+			"reference": "DFA64",
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "46040e01-cc19-4f50-8467-383edc4203a3",
+			"type": "trait",
+			"name": "One Hand",
+			"reference": "DFA64",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "de241c30-b7fe-4971-b126-d8b020da059a",
+			"type": "trait",
+			"name": "Greed",
+			"reference": "DFA60",
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "0a67f6a9-4b5c-4f48-a4a2-eae3ae5ff83d",
+			"type": "trait",
+			"name": "Absent-Mindedness",
+			"reference": "DFA56",
+			"base_points": -15,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "7ddba17f-9d64-4458-b9d6-c5bd3c3dcfa0",
+			"type": "trait",
+			"name": "Trickster",
+			"reference": "DFA66",
+			"base_points": -15,
+			"cr": 12,
+			"calc": {
+				"points": -15
+			}
+		},
+		{
+			"id": "90ccfa85-d872-4ebe-979d-e703458b0243",
+			"type": "trait",
+			"name": "Decreased Intelligence",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": -20,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "iq",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "8c701fb8-95df-48e1-a516-515debf5ea62",
+			"type": "trait",
+			"name": "One Arm",
+			"reference": "DFA63",
+			"base_points": -20,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "7e8042cf-ec5b-438a-a60b-ee74f9c3f6dd",
+			"type": "trait",
+			"name": "Decreased Dexterity",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": -20,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "dx",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "d9033559-8673-4e96-88e9-22cdaba6f4ec",
+			"type": "trait",
+			"name": "Lame (Missing Legs)",
+			"reference": "DFA62",
+			"base_points": -20,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "264ed50b-ebd8-4d01-8423-df9d64b5ac86",
+			"type": "trait",
+			"name": "Phobia (@Unavoidable@)",
+			"reference": "DFA64",
+			"base_points": -20,
+			"cr": 12,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "e57877b5-5c9b-4276-bb44-49f40c522d53",
+			"type": "trait",
+			"name": "Lame (Legless)",
+			"reference": "DFA62",
+			"base_points": -30,
+			"calc": {
+				"points": -30
+			}
+		},
+		{
+			"id": "a6c8c761-94a2-4ff9-82df-ef1bc84b608b",
+			"type": "trait",
+			"name": "Blindness",
+			"reference": "DFA57",
+			"notes": "Cannot target hit locations",
+			"base_points": -50,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to all combat skills",
+					"amount": -6
+				}
+			],
+			"calc": {
+				"points": -50
+			}
+		}
+	]
+}

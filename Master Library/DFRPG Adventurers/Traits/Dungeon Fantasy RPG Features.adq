@@ -1,0 +1,2317 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "f376f486-25f1-42aa-8b1e-474b77d25c20",
+			"type": "trait",
+			"name": "Wealth",
+			"reference": "DFA96",
+			"modifiers": [
+				{
+					"id": "4b75e91d-0988-4595-9150-6fc2ef5c7adf",
+					"type": "modifier",
+					"name": "Dead Broke",
+					"reference": "DFA67",
+					"cost": -25,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": -40
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": -1000
+						}
+					]
+				},
+				{
+					"id": "96920c8d-8ca0-49a2-9853-7b5bb08b3f3f",
+					"type": "modifier",
+					"name": "Poor",
+					"reference": "DFA67",
+					"cost": -15,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": -30
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": -800
+						}
+					]
+				},
+				{
+					"id": "e10a953d-7873-4e60-8dae-e297bf75ecfd",
+					"type": "modifier",
+					"name": "Struggling",
+					"reference": "DFA67",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": -20
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": -500
+						}
+					]
+				},
+				{
+					"id": "20302d41-392b-44a0-8dd4-c4e9fb46bdce",
+					"type": "modifier",
+					"name": "Comfortable",
+					"reference": "DFA54",
+					"cost": 10,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 20
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 1000
+						}
+					]
+				},
+				{
+					"id": "baa43843-3419-4fd3-a292-be16119a4bf1",
+					"type": "modifier",
+					"name": "Wealthy",
+					"reference": "DFA54",
+					"cost": 20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 40
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 4000
+						}
+					]
+				},
+				{
+					"id": "65a024f6-d167-420a-aedf-442e4c7d9953",
+					"type": "modifier",
+					"name": "Very Wealthy",
+					"reference": "DFA54",
+					"cost": 30,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 9000
+						}
+					]
+				},
+				{
+					"id": "59ee2fdc-d6c7-4535-8ea3-3851464c59f2",
+					"type": "modifier",
+					"name": "Filthy Rich",
+					"reference": "DFRC2:49",
+					"cost": 50,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 1
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 99000
+						}
+					]
+				},
+				{
+					"id": "963c5923-a778-4d30-b8e1-fdfa30c480df",
+					"type": "modifier",
+					"name": "Stinking Rich",
+					"reference": "DFRC2:49",
+					"cost": 75,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 2
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 999000
+						}
+					]
+				},
+				{
+					"id": "1dedb281-ec6f-4450-8bc2-ce91ea409952",
+					"type": "modifier",
+					"name": "Crazy Rich",
+					"reference": "DFRC2:49",
+					"cost": 100,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 3
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 3
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 9999000
+						}
+					]
+				},
+				{
+					"id": "775ea152-ca4d-4b2b-b20b-2270a24e2995",
+					"type": "modifier",
+					"name": "Far Too Rich",
+					"reference": "DFRC2:49",
+					"cost": 125,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 4
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 4
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 99999000
+						}
+					]
+				},
+				{
+					"id": "2dc94941-1969-4b2d-9cd1-5e5032e314f0",
+					"type": "modifier",
+					"name": "Rich Beyond Measure",
+					"reference": "DFRC2:49",
+					"cost": 150,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "status",
+							"amount": 5
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "any roll made within your realm that money and title could influence",
+							"amount": 5
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "sell",
+							"amount": 60
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "money",
+							"amount": 999999000
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "d7afc889-59e9-4a84-8016-11c22f150eba",
+			"type": "trait",
+			"name": "Vow (@Subject@)",
+			"reference": "DFA67",
+			"modifiers": [
+				{
+					"id": "2e1ae316-a5e9-40b6-b895-b5ce416b02cc",
+					"type": "modifier",
+					"name": "Minor",
+					"reference": "B161",
+					"cost": -5,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "7684dc8b-d9b0-49bd-b6f6-9beab7b252ee",
+					"type": "modifier",
+					"name": "Major",
+					"reference": "B161",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "6645c603-60fa-4f3d-9025-f50ee0245a07",
+					"type": "modifier",
+					"name": "Great",
+					"reference": "B161",
+					"cost": -15,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "b653cb2d-580a-456a-8b84-9c6de46f69a5",
+			"type": "trait",
+			"name": "Sense of Duty",
+			"reference": "DFA65",
+			"modifiers": [
+				{
+					"id": "42ef8d28-0548-466b-8c2d-2d858929fb6f",
+					"type": "modifier",
+					"name": "Adventuring Companions",
+					"reference": "DFA65",
+					"cost": -5,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "d6ebde8b-a216-4eca-ae3f-b624d847d026",
+					"type": "modifier",
+					"name": "Nation",
+					"reference": "DFA65",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "365fa3bc-39d2-49f2-8271-fd3073f7bcbf",
+					"type": "modifier",
+					"name": "Coreligionists",
+					"reference": "DFA65",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "3b2b898a-1a9b-4b12-8b12-19949ad8d5be",
+					"type": "modifier",
+					"name": "Good Entities",
+					"reference": "DFA65",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "21fd60ed-0b2b-463f-84e6-b9aeec7115d1",
+					"type": "modifier",
+					"name": "Nature",
+					"reference": "DFA66",
+					"cost": -15,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "6e353b5b-0c5c-4389-a42a-dbc17cb2aa19",
+			"type": "trait",
+			"name": "Language: @Language@",
+			"reference": "DFA51",
+			"modifiers": [
+				{
+					"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+					"type": "modifier",
+					"name": "Native",
+					"reference": "B23",
+					"cost": -6,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+					"type": "modifier",
+					"name": "Spoken",
+					"reference": "B24",
+					"notes": "None",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+					"type": "modifier",
+					"name": "Spoken",
+					"reference": "B24",
+					"notes": "Native",
+					"cost": 3,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+					"type": "modifier",
+					"name": "Written",
+					"reference": "B24",
+					"notes": "None",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+					"type": "modifier",
+					"name": "Written",
+					"reference": "B24",
+					"notes": "Native",
+					"cost": 3,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "579970c2-9f7b-4332-8534-5ed4f67978c1",
+			"type": "trait",
+			"name": "Intolerance (@Class, Ethnicity, Nationality, Religion, Sex, or Species@)",
+			"reference": "DFA61",
+			"modifiers": [
+				{
+					"id": "29857cd4-5f45-421d-81db-b10874d98df8",
+					"type": "modifier",
+					"name": "Scope: Targeted",
+					"reference": "DFA61",
+					"cost": -5,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "fe45d16d-64a9-4e7d-b4e1-116c5d2f2c8f",
+					"type": "modifier",
+					"name": "Scope: Broad",
+					"reference": "DFA61",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "be245259-a097-4bb5-b048-58119963499c",
+			"type": "trait",
+			"name": "Obsession",
+			"reference": "DFA63",
+			"notes": "@Goal@",
+			"modifiers": [
+				{
+					"id": "bf97464b-5b7f-4a67-a338-afc0a227d86c",
+					"type": "modifier",
+					"name": "Short term",
+					"reference": "B146",
+					"cost": -5,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "04dce0fc-081e-4716-8d78-ccbdd70a975d",
+					"type": "modifier",
+					"name": "Long term",
+					"reference": "B146",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "ed9a869e-1eb7-40f6-be58-231e10351ba3",
+			"type": "trait",
+			"name": "Odious Personal Habit",
+			"reference": "DFA63",
+			"notes": "@Habit@",
+			"modifiers": [
+				{
+					"id": "ea3ab8bc-175d-4075-898c-a816828b1c29",
+					"type": "modifier",
+					"name": "-1 Reaction",
+					"reference": "DFA63",
+					"cost": -5,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -1
+						}
+					]
+				},
+				{
+					"id": "93c0089c-2f11-4a8a-ae32-17931c89728d",
+					"type": "modifier",
+					"name": "-2 Reaction",
+					"reference": "DFA63",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
+						}
+					]
+				},
+				{
+					"id": "7121b7ab-b976-4892-a1cb-c1598d151a54",
+					"type": "modifier",
+					"name": "Two habits",
+					"reference": "DFA63",
+					"cost": -10,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "9054c0af-7e82-478d-a56f-ceb89ab604f8",
+			"type": "trait",
+			"name": "Weapon Master",
+			"reference": "DFA54",
+			"modifiers": [
+				{
+					"id": "f428ed11-03cf-49d4-a5a5-36e344080964",
+					"type": "modifier",
+					"name": "All weapons!",
+					"reference": "DFA54",
+					"cost": 45,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Axe/Mace"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Axe/Mace"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Flail"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Flail"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Garrote"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Garrote"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Jitte/Sai"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Jitte/Sai"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Kusari"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Kusari"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Polearm"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Polearm"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Rapier"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Rapier"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Saber"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Saber"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Smallsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Smallsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Spear"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Spear"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Staff"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Staff"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Tonfa"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Tonfa"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Axe/Mace"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Axe/Mace"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Flail"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Flail"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Sword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Sword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Whip"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Whip"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Bow"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Bow"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Crossbow"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Crossbow"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Lasso"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Lasso"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Net"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Net"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Spear Thrower"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Spear Thrower"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Thrown Weapon"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Thrown Weapon"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				},
+				{
+					"id": "13a86dd8-be60-4e27-af22-c9e27dcdb124",
+					"type": "modifier",
+					"name": "One weapon (@Weapon@)",
+					"reference": "DFA54",
+					"cost": 20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "@Weapon@"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "@Weapon@"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				},
+				{
+					"id": "64bbd1f1-9982-478f-abea-da4f96ada3cc",
+					"type": "modifier",
+					"name": "Two weapons (@First Weapon@ \u0026 @Second Weapon@)",
+					"reference": "DFA54",
+					"cost": 25,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "@First Weapon@"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "@First Weapon@"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "@Second Weapon@"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "@Second Weapon@"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				},
+				{
+					"id": "bf9857e8-2f72-4730-bca5-778c4326e6e4",
+					"type": "modifier",
+					"name": "Fencing Weapons",
+					"reference": "DFA54",
+					"cost": 30,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Rapier"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Rapier"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Saber"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Saber"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Smallsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Smallsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				},
+				{
+					"id": "12bbe940-ac73-4152-922d-14217f2e1ab9",
+					"type": "modifier",
+					"name": "Knightly Weapons",
+					"reference": "DFA54",
+					"cost": 30,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Axe/Mace"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Axe/Mace"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Flail"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Flail"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				},
+				{
+					"id": "2551a3f0-45e7-4ff2-8c6a-15620bcf155f",
+					"type": "modifier",
+					"name": "Bow",
+					"reference": "DFA54",
+					"cost": 20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Bow"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Bow"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				},
+				{
+					"id": "fd81489a-70f9-482b-97d5-ef2af330e942",
+					"type": "modifier",
+					"name": "Knives",
+					"reference": "DFA54",
+					"cost": 20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				},
+				{
+					"id": "58013b2c-9d8f-4696-9034-780432989c5d",
+					"type": "modifier",
+					"name": "Swords",
+					"reference": "DFA54",
+					"cost": 35,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Broadsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Rapier"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Rapier"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Saber"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Saber"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Smallsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Smallsword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Sword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Sword"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "c8585f65-1043-455d-b9c0-de189c31cef5",
+			"type": "trait",
+			"name": "Language: @Language@",
+			"reference": "DFA51",
+			"notes": "With Language Talent",
+			"modifiers": [
+				{
+					"id": "c6b0a003-af16-40a6-a9c4-c29280eba206",
+					"type": "modifier",
+					"name": "Native",
+					"reference": "B23",
+					"cost": -4,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "a18b2c1c-0d5e-4e38-9d1b-10a3b743b406",
+					"type": "modifier",
+					"name": "Spoken",
+					"reference": "B24",
+					"notes": "Native",
+					"cost": 2,
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "fa00b10b-95d0-4c4a-bd3a-3f83afe05751",
+					"type": "modifier",
+					"name": "Written",
+					"reference": "B24",
+					"notes": "Native",
+					"cost": 2,
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Language Talent"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "db0b6a47-d9a8-48f5-8947-a59d1397d0fb",
+			"type": "trait",
+			"name": "Appearance",
+			"reference": "DFA47",
+			"modifiers": [
+				{
+					"id": "2e119ce2-594d-40ee-91f8-e92b65a20d36",
+					"type": "modifier",
+					"name": "Attractive",
+					"cost": 4,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "extra from those attracted to members of your race and sex",
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sex Appeal"
+							},
+							"amount": 1
+						}
+					]
+				},
+				{
+					"id": "d6fe5860-24e2-44fa-ae1e-c55aa1bd7802",
+					"type": "modifier",
+					"name": "Attractive",
+					"notes": "Impressive",
+					"cost": 4,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from everyone",
+							"amount": 1
+						}
+					]
+				},
+				{
+					"id": "d162e6cf-5bd7-42db-bd9c-80bcb5d113b2",
+					"type": "modifier",
+					"name": "Handsome/Beautiful",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from everyone",
+							"amount": 2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "extra from those attracted to members of your race and sex",
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sex Appeal"
+							},
+							"amount": 4
+						}
+					]
+				},
+				{
+					"id": "c8642406-103f-4caf-922f-58d7540338dd",
+					"type": "modifier",
+					"name": "Handsome/Beautiful",
+					"notes": "Impressive",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from everyone",
+							"amount": 3
+						}
+					]
+				},
+				{
+					"id": "2a757b29-d4d4-4cad-b113-43517cdba54d",
+					"type": "modifier",
+					"name": "Very Handsome/Very Beautiful",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from everyone",
+							"amount": 2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "extra from those attracted to members of your race and sex",
+							"amount": 4
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sex Appeal"
+							},
+							"amount": 6
+						}
+					]
+				},
+				{
+					"id": "c337f986-4a47-4abc-89c2-dff3d58606f7",
+					"type": "modifier",
+					"name": "Very Handsome/Very Beautiful",
+					"notes": "Impressive",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from everyone",
+							"amount": 4
+						}
+					]
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Appearance"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "12a0974e-3653-415a-adb4-8af672fe9b90",
+			"type": "trait",
+			"name": "Fitness",
+			"modifiers": [
+				{
+					"id": "bc5833ba-f655-400a-af9c-09f9315a0ca5",
+					"type": "modifier",
+					"name": "Fit",
+					"cost": 5,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls",
+							"amount": 1
+						}
+					]
+				},
+				{
+					"id": "83abab6b-e601-40aa-a44b-dabc02791c78",
+					"type": "modifier",
+					"name": "Very Fit",
+					"cost": 15,
+					"cost_type": "points",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls",
+							"amount": 2
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": 15
+			}
+		}
+	]
+}

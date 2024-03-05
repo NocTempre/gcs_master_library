@@ -131,13 +131,13 @@
 			"id": "d_evil",
 			"type": "integer_ref",
 			"name": "Detect Evil",
-			"attribute_base": "if(has_trait(Detect Evil),$per+trait_level(Power Investiture),0)"
+			"attribute_base": "if(has_trait(Detect Evil),$per+max(trait_level(Power Investiture),0),0)"
 		},
 		{
 			"id": "d_good",
 			"type": "integer_ref",
 			"name": "Detect Good",
-			"attribute_base": "if(has_trait(Detect Good),$per+trait_level(Holiness),0)"
+			"attribute_base": "if(has_trait(Detect Good),$per+max(trait_level(Holiness),0),0)"
 		},
 		{
 			"id": "d_bless",
