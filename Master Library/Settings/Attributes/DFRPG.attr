@@ -8,8 +8,7 @@
 			"name": "ST",
 			"full_name": "Strength",
 			"attribute_base": "10",
-			"cost_per_point": 10,
-			"cost_adj_percent_per_sm": 10
+			"cost_per_point": 10
 		},
 		{
 			"id": "dx",
@@ -41,23 +40,21 @@
 			"name": "Resources"
 		},
 		{
-			"id": "sell",
+			"id": "buy",
 			"type": "integer_ref",
-			"name": "%",
-			"full_name": "Sell Value",
-			"attribute_base": "40"
+			"name": "Buy Value %",
+			"attribute_base": "100"
 		},
 		{
-			"id": "status",
+			"id": "sell",
 			"type": "integer_ref",
-			"name": "Status",
-			"attribute_base": "0"
+			"name": "Sell Value %",
+			"attribute_base": "40"
 		},
 		{
 			"id": "money",
 			"type": "integer_ref",
-			"name": "$",
-			"full_name": "Starting Money",
+			"name": "Starting Money $",
 			"attribute_base": "1000"
 		},
 		{
@@ -83,7 +80,7 @@
 			"id": "fright_check",
 			"type": "integer_ref",
 			"name": "Fright Check",
-			"attribute_base": "$will"
+			"attribute_base": "min($will,13)"
 		},
 		{
 			"id": "senses",
@@ -177,6 +174,13 @@
 			"cost_per_point": 5
 		},
 		{
+			"id": "sprint",
+			"type": "integer_ref",
+			"name": "Sprint Speed",
+			"attribute_base": "max(floor(trait_level(Tiger Sprint)*.5*$basic_speed+$basic_speed),$basic_speed+1)",
+			"cost_per_point": 5
+		},
+		{
 			"id": "jump",
 			"type": "integer_ref",
 			"name": "Jump Distance",
@@ -195,13 +199,96 @@
 			"attribute_base": "if(has_trait(Flight)||has_trait(Beast Flight),2*$basic_move,0)"
 		},
 		{
+			"id": "pools",
+			"type": "secondary_separator",
+			"name": "Vitality"
+		},
+		{
+			"id": "b_hp",
+			"type": "integer",
+			"name": "Basic HP",
+			"attribute_base": "$st",
+			"cost_per_point": 2
+		},
+		{
+			"id": "b_fp",
+			"type": "integer",
+			"name": "Basic FP",
+			"attribute_base": "$ht",
+			"cost_per_point": 3
+		},
+		{
+			"id": "lose_fp",
+			"type": "decimal_ref",
+			"name": "FP Exhaust Mult",
+			"attribute_base": "1-.5*(has_trait(Very Fit))+(has_trait(Unfit)||has_trait(Very Unfit))"
+		},
+		{
+			"id": "heal_hp",
+			"type": "integer_ref",
+			"name": "HP Recover Mult",
+			"attribute_base": "max(floor($b_hp/10),1)+has_trait(Very Rapid Healing)"
+		},
+		{
+			"id": "heal_fp",
+			"type": "integer_ref",
+			"name": "FP Recover Min",
+			"attribute_base": "10-5*(has_trait(Fit)||has_trait(Very Fit))+10*has_trait(Very Unfit)"
+		},
+		{
+			"id": "luck",
+			"type": "integer_ref",
+			"name": "Luck Recover Min",
+			"attribute_base": "60"
+		},
+		{
+			"id": "r_cold",
+			"type": "integer_ref",
+			"name": "Resist Cold",
+			"attribute_base": "$ht"
+		},
+		{
+			"id": "r_hot",
+			"type": "integer_ref",
+			"name": "Resist Hot",
+			"attribute_base": "$ht"
+		},
+		{
+			"id": "r_disease",
+			"type": "integer_ref",
+			"name": "Resist Disease",
+			"attribute_base": "$ht"
+		},
+		{
+			"id": "r_poison",
+			"type": "integer_ref",
+			"name": "Resist Poison",
+			"attribute_base": "$ht"
+		},
+		{
+			"id": "rep_town",
+			"type": "integer_ref",
+			"name": "Status (In-Town)",
+			"attribute_base": "0"
+		},
+		{
+			"id": "rep_home",
+			"type": "integer_ref",
+			"name": "Status (Homeland)",
+			"attribute_base": "0"
+		},
+		{
+			"id": "rep_wild",
+			"type": "integer_ref",
+			"name": "Status (Wilds)",
+			"attribute_base": "0"
+		},
+		{
 			"id": "hp",
 			"type": "pool",
-			"name": "HP",
-			"full_name": "Hit Points",
-			"attribute_base": "$st",
-			"cost_per_point": 2,
-			"cost_adj_percent_per_sm": 10,
+			"name": "Hit Points",
+			"attribute_base": "$b_hp",
+			"cost_per_point": 0,
 			"thresholds": [
 				{
 					"state": "Dead",
@@ -278,10 +365,9 @@
 		{
 			"id": "fp",
 			"type": "pool",
-			"name": "FP",
-			"full_name": "Fatigue Points",
-			"attribute_base": "$ht",
-			"cost_per_point": 3,
+			"name": "Fatigue Points",
+			"attribute_base": "$b_fp",
+			"cost_per_point": 0,
 			"thresholds": [
 				{
 					"state": "Unconscious",
@@ -321,6 +407,13 @@
 					"expression": "$fp"
 				}
 			]
+		},
+		{
+			"id": "cp",
+			"type": "pool",
+			"name": "Control Points",
+			"attribute_base": "2*$cm",
+			"cost_per_point": 0
 		},
 		{
 			"id": "ER",
