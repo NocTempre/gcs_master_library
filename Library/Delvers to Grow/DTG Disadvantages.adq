@@ -82,6 +82,7 @@
 						}
 					],
 					"name": "Accursed",
+					"reference": "DTG30",
 					"calc": {
 						"points": -25
 					}
