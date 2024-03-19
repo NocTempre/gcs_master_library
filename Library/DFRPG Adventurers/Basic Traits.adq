@@ -1,0 +1,1096 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "00000000-0000-0000-0000-000000000001",
+			"type": "trait",
+			"name": "Increased Strength",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": 10,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "st",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000002",
+			"type": "trait",
+			"name": "Increased Dexterity",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": 20,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "dx",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000003",
+			"type": "trait",
+			"name": "Increased Intelligence",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": 20,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "iq",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000004",
+			"type": "trait",
+			"name": "Increased Health",
+			"reference": "DFA9",
+			"levels": 1,
+			"points_per_level": 10,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "ht",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000005",
+			"type": "trait",
+			"name": "Increased Will",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "will",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000006",
+			"type": "trait",
+			"name": "Increased Perception",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "per",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000007",
+			"type": "trait",
+			"name": "Increased Hit Points",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": 2,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "hp",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 2
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000008",
+			"type": "trait",
+			"name": "Increased Fatigue Points",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": 2,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "fp",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 2
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000009",
+			"type": "trait",
+			"name": "Increased Basic Speed",
+			"reference": "DFA11",
+			"levels": 1,
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "basic_speed",
+					"amount": 0.25,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000010",
+			"type": "trait",
+			"name": "Increased Basic Move",
+			"reference": "DFA11",
+			"levels": 1,
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "basic_move",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000011",
+			"type": "trait",
+			"name": "Decreased Strength",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": -10,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "st",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000012",
+			"type": "trait",
+			"name": "Decreased Dexterity",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": -20,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "dx",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000013",
+			"type": "trait",
+			"name": "Decreased Intelligence",
+			"reference": "DFA8",
+			"levels": 1,
+			"points_per_level": -20,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "iq",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -20
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000014",
+			"type": "trait",
+			"name": "Decreased Health",
+			"reference": "DFA9",
+			"levels": 1,
+			"points_per_level": -10,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "ht",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000015",
+			"type": "trait",
+			"name": "Decreased Will",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "will",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000016",
+			"type": "trait",
+			"name": "Decreased Perception",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "per",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000017",
+			"type": "trait",
+			"name": "Decreased Hit Points",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -2,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "hp",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -2
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000018",
+			"type": "trait",
+			"name": "Decreased Fatigue Points",
+			"reference": "DFA10",
+			"levels": 1,
+			"points_per_level": -2,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "fp",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -2
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000019",
+			"type": "trait",
+			"name": "Decreased Basic Speed",
+			"reference": "DFA11",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "basic_speed",
+					"amount": -0.25,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "00000000-0000-0000-0000-000000000020",
+			"type": "trait",
+			"name": "Decreased Basic Move",
+			"reference": "DFA11",
+			"levels": 1,
+			"points_per_level": -5,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "basic_move",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "b9bf313c-01ae-4a98-b878-691bafc3db3a",
+			"type": "trait",
+			"name": "Language",
+			"reference": "DFA51",
+			"notes": "Spoken",
+			"modifiers": [
+				{
+					"id": "9fe321fc-c53b-4156-b1dc-1494bfbb9b2f",
+					"type": "modifier",
+					"name": "Common",
+					"reference": "DFA9",
+					"affects": "base_only",
+					"cost_type": "points"
+				},
+				{
+					"id": "6cebf72e-35ab-4a16-964b-910d100694a3",
+					"type": "modifier",
+					"name": "Ancient",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "cf26f0db-7604-4e30-b419-f501c30eb8a2",
+					"type": "modifier",
+					"name": "Angelic",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "1f9de0be-511f-4d93-9153-48374b8d4b48",
+					"type": "modifier",
+					"name": "Demontongue",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "129922e2-179e-41f0-be6a-f4172914fd05",
+					"type": "modifier",
+					"name": "Dwarvish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "f31fdc79-5e9f-4cda-890d-853f83abf6e9",
+					"type": "modifier",
+					"name": "Elvish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "79306832-f384-4f85-89a4-41b215d31a95",
+					"type": "modifier",
+					"name": "Gnomish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "ed09e933-2277-4a09-a9f8-8aa006b0494c",
+					"type": "modifier",
+					"name": "Elder Tongue",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "31c3eeb5-2c41-4f23-a999-9d2d4d3d824f",
+					"type": "modifier",
+					"name": "Faerie",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "c9be134d-d1e6-49e0-88fc-72554ae622cf",
+					"type": "modifier",
+					"name": "Orcish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "0db6e926-6168-4a7b-8a0b-ada77c66866d",
+					"type": "modifier",
+					"name": "Reptilian",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "2c935b51-5c89-4ab0-a270-b3556b6debed",
+			"type": "trait",
+			"name": "Language",
+			"reference": "DFA51",
+			"notes": "Written",
+			"modifiers": [
+				{
+					"id": "9fe321fc-c53b-4156-b1dc-1494bfbb9b2f",
+					"type": "modifier",
+					"name": "Common",
+					"reference": "DFA9",
+					"affects": "base_only",
+					"cost_type": "points"
+				},
+				{
+					"id": "6cebf72e-35ab-4a16-964b-910d100694a3",
+					"type": "modifier",
+					"name": "Ancient",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "cf26f0db-7604-4e30-b419-f501c30eb8a2",
+					"type": "modifier",
+					"name": "Angelic",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "1f9de0be-511f-4d93-9153-48374b8d4b48",
+					"type": "modifier",
+					"name": "Demontongue",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "129922e2-179e-41f0-be6a-f4172914fd05",
+					"type": "modifier",
+					"name": "Dwarvish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "f31fdc79-5e9f-4cda-890d-853f83abf6e9",
+					"type": "modifier",
+					"name": "Elvish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "79306832-f384-4f85-89a4-41b215d31a95",
+					"type": "modifier",
+					"name": "Gnomish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "ed09e933-2277-4a09-a9f8-8aa006b0494c",
+					"type": "modifier",
+					"name": "Elder Tongue",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "31c3eeb5-2c41-4f23-a999-9d2d4d3d824f",
+					"type": "modifier",
+					"name": "Faerie",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "c9be134d-d1e6-49e0-88fc-72554ae622cf",
+					"type": "modifier",
+					"name": "Orcish",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "5324c1b1-bbd2-4d0c-995e-d4cb5771579a",
+					"type": "modifier",
+					"name": "Reptilian",
+					"reference": "DFA9",
+					"cost": 3,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "68250fbb-bc28-4cfc-bf93-78fc3fe3e253",
+			"type": "trait",
+			"name": "Language",
+			"reference": "DFA51",
+			"modifiers": [
+				{
+					"id": "9fe321fc-c53b-4156-b1dc-1494bfbb9b2f",
+					"type": "modifier",
+					"name": "Common",
+					"reference": "DFA9",
+					"affects": "base_only",
+					"cost_type": "points"
+				},
+				{
+					"id": "6cebf72e-35ab-4a16-964b-910d100694a3",
+					"type": "modifier",
+					"name": "Ancient",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "cf26f0db-7604-4e30-b419-f501c30eb8a2",
+					"type": "modifier",
+					"name": "Angelic",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "1f9de0be-511f-4d93-9153-48374b8d4b48",
+					"type": "modifier",
+					"name": "Demontongue",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "129922e2-179e-41f0-be6a-f4172914fd05",
+					"type": "modifier",
+					"name": "Dwarvish",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "f31fdc79-5e9f-4cda-890d-853f83abf6e9",
+					"type": "modifier",
+					"name": "Elvish",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "79306832-f384-4f85-89a4-41b215d31a95",
+					"type": "modifier",
+					"name": "Gnomish",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "ed09e933-2277-4a09-a9f8-8aa006b0494c",
+					"type": "modifier",
+					"name": "Elder Tongue",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "31c3eeb5-2c41-4f23-a999-9d2d4d3d824f",
+					"type": "modifier",
+					"name": "Faerie",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "c9be134d-d1e6-49e0-88fc-72554ae622cf",
+					"type": "modifier",
+					"name": "Orcish",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "c0619680-f378-416e-a743-2b83061b610a",
+					"type": "modifier",
+					"name": "Orcish",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "fe3531cc-79db-426c-ad22-2050191f391e",
+					"type": "modifier",
+					"name": "Reptilian",
+					"reference": "DFA9",
+					"cost": 6,
+					"affects": "base_only",
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "0f57348f-84f5-4819-b0f0-c9b4e7f60cb3",
+			"type": "trait",
+			"name": "Natural Attacks",
+			"reference": "DFX38",
+			"notes": "Unarmed",
+			"userdesc": "Remove attacks you lack training in",
+			"weapons": [
+				{
+					"id": "2e00ab17-148f-4ff1-b71a-8870a5f147f8",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Barehanded Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Judo"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 cr"
+					}
+				},
+				{
+					"id": "7fc74341-34da-48cc-a472-f9368649bce6",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Open-handed Parry",
+					"usage_notes": "One-handed",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Judo"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 cr"
+					}
+				},
+				{
+					"id": "a16d8582-5d76-4d11-a8d3-a785736e6994",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"strength": "†",
+					"usage": "Open-handed Parry",
+					"usage_notes": "Two-handed",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Sumo Wrestling"
+						},
+						{
+							"type": "skill",
+							"name": "Wrestling"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 cr"
+					}
+				},
+				{
+					"id": "3bc73852-2cb8-41a1-bf2c-b7190956d1f3",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 cr"
+					}
+				},
+				{
+					"id": "e861c0ca-e845-4d5b-b0d1-480e1f3191f3",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"usage_notes": "If you miss, roll vs. DX to avoid falling",
+					"reach": "C,1",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"damage": "thr cr"
+					}
+				},
+				{
+					"id": "771528ab-94e9-40eb-8956-a222bcd8dd51",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "knockback",
+						"st": "thr_leveled",
+						"base": "-1"
+					},
+					"usage": "Shove",
+					"usage_notes": "One-handed",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Sumo Wrestling"
+						}
+					],
+					"calc": {
+						"damage": "thr (leveled)-1 knockback"
+					}
+				},
+				{
+					"id": "8a6999bc-2520-4a61-951e-15bff41c8408",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "knockback",
+						"st": "thr_leveled",
+						"base": "0"
+					},
+					"strength": "†",
+					"usage": "Shove",
+					"usage_notes": "Two-handed",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Sumo Wrestling"
+						}
+					],
+					"calc": {
+						"damage": "thr (leveled) knockback"
+					}
+				},
+				{
+					"id": "c72222e3-dc36-4e30-8ddf-de3386c5fe12",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr, special",
+						"st": "thr",
+						"base": "-2"
+					},
+					"usage": "Slam",
+					"usage_notes": "add SSRT bonus per die, also damages self, lower damage rolls vs DX to fall down",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Sumo Wrestling"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					],
+					"calc": {
+						"damage": "thr-2 cr, special"
+					}
+				},
+				{
+					"id": "fc203952-eed9-4662-9355-d44b15e589bb",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "special"
+					},
+					"usage": "Grappling",
+					"usage_notes": "One-handed",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Judo"
+						}
+					],
+					"calc": {
+						"damage": "special"
+					}
+				},
+				{
+					"id": "ebc7fb83-2e2d-42ae-8fd6-8251d24f9d60",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "special"
+					},
+					"strength": "†",
+					"usage": "Grappling",
+					"usage_notes": "Two-handed",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Sumo Wrestling"
+						},
+						{
+							"type": "skill",
+							"name": "Wrestling"
+						}
+					],
+					"calc": {
+						"damage": "special"
+					}
+				},
+				{
+					"id": "42689d4b-0fac-4580-9b91-2c672290ca4e",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "feet",
+						"base": "9"
+					},
+					"usage": "Throw",
+					"usage_notes": "after judo parry or grapple only",
+					"reach": "C,1",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Judo"
+						}
+					],
+					"calc": {
+						"damage": "9 feet"
+					}
+				}
+			],
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to retreating parry (+3 total) with Boxing or Karate and suffering no penalty against weapons",
+					"amount": 2
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to parries against weapons unless the attack is a thrust or you’re using Judo or Karate",
+					"amount": -3
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}
